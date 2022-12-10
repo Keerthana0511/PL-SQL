@@ -1,0 +1,8 @@
+SET SERVEROUTPUT ON;
+DECLARE
+v_salary NUMBER(20);
+BEGIN
+SELECT SALARY INTO v_salary FROM employee WHERE emp_id=101;
+DBMS_OUTPUT.PUT_LINE(v_salary);
+END;
+/
